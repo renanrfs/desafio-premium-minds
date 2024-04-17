@@ -1,6 +1,6 @@
-import java.util.HashSet;
+package com.premium.minds;
+
 import java.util.Scanner;
-import java.util.Set;
 
 
 /**
@@ -24,7 +24,7 @@ public class PokemonCatcher {
         System.out.println("Enter the movement sequence (N, S, E, O) or Q to quit:");
 
         Game game;
-        String nextMove = "";
+        String nextMove;
         while (true) {
 
             nextMove = scanner.nextLine();

@@ -1,3 +1,6 @@
+package com.premium.minds;
+
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,7 +16,7 @@ public class Game {
     private final Set<String> visitor = new HashSet<>();
 
     /**
-     * Creates a new Game.
+     * Creates a new com.premium.minds.Game.
      */
     public Game() {
         visitor.add(x + "," + y);
@@ -27,7 +30,9 @@ public class Game {
      */
     public int catchPokemons(String nextMove) {
 
-        // Go through the sequence of moves to the end
+
+
+        // go through the sequence of moves to the end
         for (char move : nextMove.toCharArray()) {
             switch (move) {
                 case 'N':
@@ -50,7 +55,7 @@ public class Game {
                     throw new IllegalArgumentException("Invalid move: " + move);
 
             }
-            // Add the current position to the set of visited positions
+            // add the current position to the set of visited positions
             visitor.add(x + "," + y);
         }
 

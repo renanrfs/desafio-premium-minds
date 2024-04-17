@@ -1,3 +1,5 @@
+package com.premium.minds;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
